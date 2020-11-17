@@ -3,9 +3,13 @@
     "admin": {
       "updated": [
         "/repository/deployment/server/jaggeryapps/admin/site/themes/wso2/templates/menu/left/template.jag",
-        "/repository/deployment/server/jaggeryapps/admin/site/themes/wso2/templates/breadcumb/template.jag"
+        "/repository/deployment/server/jaggeryapps/admin/site/themes/wso2/templates/breadcumb/template.jag",
+        "/repository/deployment/server/jaggeryapps/admin/site/themes/wso2/images/logo-white.png",
+        "/repository/deployment/server/jaggeryapps/admin/site/themes/wso2/libs/theme-wso2_1.0/images/logo-inverse.svg"
       ],
-      "added": []
+      "added": [
+
+      ]
     },
     "publisher": {
       "updated": [

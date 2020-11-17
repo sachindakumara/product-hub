@@ -186,7 +186,8 @@
                         <configuration>
                             <tasks>
                                 <!-- download file -->
-                                <get src="https://sftp-release-binaries.s3.amazonaws.com/sftp/apim25/wso2am-2.5.0%2B1588256020350-IGW.zip" dest="${project.build.directory}/wso2am-2.5.0.zip" verbose="false" usetimestamp="true" />
+                                <!--<get src="https://sftp-release-binaries.s3.amazonaws.com/sftp/apim25/wso2am-2.5.0%2B1588256020350-IGW.zip" dest="${project.build.directory}/wso2am-2.5.0.zip" verbose="false" usetimestamp="true" />-->
+                                <get src="file:///home/sachinda/projects/IGW/newmodule/wso2am-2.5.0+1588256020350.full.zip" dest="${project.build.directory}/wso2am-2.5.0.zip" verbose="false" usetimestamp="true" />
                                 <property name="tempdir" value="target/intgw" />
                                 <mkdir dir="${tempdir}" />
                                 <unzip dest="${tempdir}">
@@ -194,6 +195,9 @@
                                         <include name="wso2am-2.5.0.zip" />
                                     </fileset>
                                 </unzip>
+                                <copy todir="target/intgw/wso2am-2.5.0/repository/deployment/server/jaggeryapps/admin">
+                                    <fileset dir="../../p2-profile/product/target/features/jaggeryapps/admin"/>
+                                </copy>
                                 <copy todir="target/intgw/wso2am-2.5.0/repository/deployment/server/jaggeryapps/publisher">
                                     <fileset dir="../../p2-profile/product/target/features/jaggeryapps/publisher"/>
                                 </copy>
